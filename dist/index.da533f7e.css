@@ -1,0 +1,145 @@
+@import "https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap";
+.header {
+  z-index: 1;
+  background-image: url("img.0f75d8a9.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 38px 0 120px;
+  position: relative;
+}
+
+.header:after {
+  content: "";
+  z-index: -1;
+  background: #252b49cc;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header-wrap {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.header-title:before {
+  content: "";
+  background-color: #babbc5;
+  width: 1170px;
+  height: 1px;
+  margin: 36px 0 130px;
+  display: block;
+}
+
+.logo {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.875rem;
+  font-weight: 400;
+}
+
+.logo span {
+  color: #656980;
+  text-transform: uppercase;
+  font-size: 1.875rem;
+  font-weight: 900;
+}
+
+.navigation-list {
+  flex-direction: row;
+  display: flex;
+}
+
+.navigation-list li {
+  margin-left: 60px;
+}
+
+.navigation-list li a {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Raleway;
+  font-size: .8125rem;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.header-information {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 1170px;
+  display: flex;
+}
+
+.header-information h1 {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  font-family: Raleway;
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.header-description p {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 80px;
+  font-family: Raleway;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.button-wrap {
+  background-color: #ff4343;
+  width: 370px;
+  height: 80px;
+}
+
+.button {
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  width: 369px;
+  height: 77.576px;
+  display: flex;
+}
+
+.button a {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-family: Raleway;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+/*# sourceMappingURL=index.da533f7e.css.map */
