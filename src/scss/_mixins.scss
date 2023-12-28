@@ -26,6 +26,7 @@
     font-size: $_24px;
     font-weight: 900;
     line-height: normal;
+    text-transform: uppercase;
 }
 @mixin h5 {
     color: $title;

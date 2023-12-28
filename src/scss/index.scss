@@ -3,6 +3,7 @@
 @import '../scss/variables';
 @import '../scss/_mixins';
 @import url("./header.scss");
+@import url("./features.scss");
 
 
 * {
@@ -13,7 +14,7 @@
     text-decoration: none;
 }
 html {
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     font-size: 16px;
 } 
 .container {
