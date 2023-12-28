@@ -36,9 +36,10 @@
     line-height: normal;
 }
 @mixin h6 {
-    color: $title;
+    color: #FFF;
     font-family: Raleway;
     font-size: $_13px;
     font-weight: 700;
     line-height: normal;
+    text-transform: uppercase;
 }

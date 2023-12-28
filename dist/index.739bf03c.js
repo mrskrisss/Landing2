@@ -575,6 +575,15 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"ebWYT":[function(require,module,exports) {
+new Swiper(".swiper-container", {
+    //Прогрессбар
+    pagination: {
+        el: ".swiper-pagination",
+        //Булеты
+        type: "bullets",
+        clickable: true
+    }
+});
 
 },{}]},["b3anl","ebWYT"], "ebWYT", "parcelRequiredd31")
 
