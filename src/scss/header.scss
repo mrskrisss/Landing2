@@ -163,25 +163,21 @@ h1{
     }
 }
 .button-wrap {
-    width: 370px;
-    height: 80px;
-    background-color: #FF4343;
-    margin: auto;
+  width: 370px;
+  height: 80px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  background: #FF4343;
 }
-.button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 369px;
-    height: 77.576px;
-    cursor: pointer;
-    a {
+.button_link {
+        width: 370px;
+        height: 80px;
         color: #FFF;
-        text-align: center;
         font-family: Raleway;
         font-size: 24px;
         font-weight: 900;
         line-height: normal;
         text-transform: uppercase;
-    }
+        padding: 28px 0 28px;
 }

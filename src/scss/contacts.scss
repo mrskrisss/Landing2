@@ -2,7 +2,7 @@
 @import '../scss/mixins';
 .contacts {
     padding: 71px 0 67px;
-    background-color: #353C65;;
+    background-color: #353C65;
 }
 .contacts-wrap {
     display: flex;
@@ -40,17 +40,15 @@
     ul {
         display: flex;
         flex-direction: row;
-        li {
-            margin: auto;
-            width: 39px;
-            height: 39px;
+        li {margin: auto;
             border: 1px solid rgb(198, 203, 205);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
             a{
                 color: rgb(198, 203, 205);
+                width: 39px;
+                height: 39px;
+                display: flex;
+            align-items: center;
+            justify-content: center;
             }
         }
     }

@@ -2,14 +2,14 @@
 @import '../scss/mixins';
 .features {
     padding: 116px 0 133px;
-    margin: 0 -15px;
 }
 .grid {
-    padding: 0 -15px;
+    margin: 0 -15px;
     display: grid;
-    grid-template-columns: repeat(3, 370px);
+    grid-template-columns: repeat(auto-fill, 370px);
     grid-template-rows: repeat(2, 1fr);
-    grid-gap: 87px 30px;
+    grid-row-gap: 88px;
+    grid-column-gap: 30px;
 }
 .grid-item {
     display: flex;
@@ -25,14 +25,23 @@
                 width: 100%;
             }
         }
+    }
         h4 {
-            @include h4;
+            color: $title;
+    font-family: Raleway;
+    font-size: $_24px;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
             margin-bottom: 50px;
             text-transform: uppercase
         }
-        .description-features__1 {
+        .description-features {
         p{
-            @include h5;
-        }
+            color: $title;
+    font-family: Raleway;
+    font-size: $_18px;
+    font-weight: 400;
+    line-height: normal;
         }
 }

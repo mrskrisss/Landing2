@@ -1,0 +1,70 @@
+@import '../scss/variables';
+@import '../scss/mixins';
+.our_team {
+    padding: 114px 0;
+}
+.aor_team-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.aor_team-card {
+    max-width: 270px;
+}
+.aor_team-card-img {
+    width: 270px;
+    height: 270px;
+    margin-bottom: 30px;
+    img {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        object-fit: none;
+        object-position: center;
+    }
+}
+.aor_team-card-name {
+    color: #2D3033;
+font-family: Raleway;
+font-size: $_24px;
+font-weight: 700;
+text-transform: capitalize;
+margin-bottom: 5px;
+}
+.aor_team-card-profession {
+    color: #FF4343;
+font-family: Raleway;
+font-size: $_18px;
+font-weight: 400;
+text-transform: uppercase;
+margin-bottom: 18px;
+}
+.aor_team-card-description p {
+    color: #6C7279;
+font-family: Raleway;
+font-size: $_18px;
+font-weight: 400;
+margin-bottom: 38px;
+}
+.aor_team-card-icons {
+    ul {
+        display: flex;
+        flex-direction: row;
+        li {
+            margin-right: 5px;
+            border: 1px solid rgb(198, 203, 205);
+            a{
+                color: rgb(198, 203, 205);
+                width: 39px;
+                height: 39px;
+                display: flex;
+            align-items: center;
+            justify-content: center;
+            }
+        }
+    }
+}
+.list-icon:last-child {
+    margin-right: 0;
+}

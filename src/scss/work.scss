@@ -1,0 +1,39 @@
+@import '../scss/variables';
+@import '../scss/mixins';
+.work {
+    padding: 0;
+}
+.work-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.work-item {
+    width: 25%;
+    max-height: 340px;
+    overflow: hidden;
+    
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid rgb(255, 255, 255);
+}
+.wokr-item-img {
+    padding: 0 0 100% 0;
+    overflow: hidden;
+    img {
+        width: 25%;
+        max-height: 340px;
+    }
+}
+.wokr-item-filter {
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 67, 67, 0.80);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
