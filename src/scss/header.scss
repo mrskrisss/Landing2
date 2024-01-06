@@ -1,14 +1,14 @@
 @import '../scss/variables';
 
 .header {
-    padding: 38px 0 120px;
+    padding-bottom: 120px;
     background-image: url("../img/img.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
     z-index: 1;
-    
+    margin: 0 -15px;
 }
 .header:after{
     content: "";
@@ -22,16 +22,17 @@
     z-index: -1;
 }
 .header-wrap {
+    height: 100px;
+    padding-top: 38px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 .header-title:before {
     content: "";
-    width: 1170px;
+    width: 100%;
     height: 1px;
     background-color: #BABBC5;
-    margin: 36px 0 130px;
+    margin: 0 0 130px;
     display: block;
 }
 .logo {
@@ -46,12 +47,24 @@
         font-weight: 900;
     }
 }
+.navigation-menu {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+}
 .navigation-list {
     display: flex;
     flex-direction: row;
+    text-align: center;
     li { 
-        margin-left: 60px;
+      height: 60px;
+      padding: 0 35px;
+      padding-top: 9px;
+      border-bottom: 3px none rgb(186, 187, 197);
         a{
+          display: block;
+          width: 100%;
+          height: 100%;
         color: #FFF;
         text-align: center;
         font-family: Raleway;
@@ -60,87 +73,30 @@
         line-height: normal;
         text-transform: uppercase;
         }
+        }
     }
-}
-/* скрываем чекбокс */
-#menu__toggle {
-    opacity: 0;
-  }
-  /* стилизуем кнопку */
-  .menu__btn {
-    display: flex; /* используем flex для центрирования содержимого */
-    align-items: center;  /* центрируем содержимое кнопки */
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    width: 26px;
-    height: 26px;
+  .navigation-list_item:hover {
+    border-bottom: 3px solid rgb(186, 187, 197);
     cursor: pointer;
-    z-index: 1;
   }
-  /* добавляем "гамбургер" */
-  .menu__btn > span,
-  .menu__btn > span::before,
-  .menu__btn > span::after {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: #616161;
+  .navigation-list_item:active {
+    border-bottom: 3px solid rgb(231, 20, 20);
+    cursor: pointer;
   }
-  .menu__btn > span::before {
-    content: '';
-    top: -8px;
+  .navigation-list_item-link:active {
+    color: rgb(231, 20, 20);
+
   }
-  .menu__btn > span::after {
-    content: '';
-    top: 8px;
-  }
-  /* контейнер меню */
-.menu__box {
-    display: block;
-    position: fixed;
-    visibility: hidden;
-    top: 0;
-    left: -100%;
-    width: 300px;
-    height: 100%;
-    margin: 0;
-    padding: 80px 0;
-    list-style: none;
-    text-align: center;
-    background-color: #ECEFF1;
-    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-  }
-  /* элементы меню */
-  .menu__item {
-    display: block;
-    padding: 12px 24px;
-    color: #333;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    text-decoration: none;
-  }
-  .menu__item:hover {
-    background-color: #CFD8DC;
-  }
-  #menu__toggle:checked ~ .menu__btn > span {
-    transform: rotate(45deg);
-  }
-  #menu__toggle:checked ~ .menu__btn > span::before {
-    top: 0;
-    transform: rotate(0);
-  }
-  #menu__toggle:checked ~ .menu__btn > span::after {
-    top: 0;
-    transform: rotate(90deg);
-  }
-  #menu__toggle:checked ~ .menu__box {
-    visibility: visible;
-    left: 0;
-  }
-h1{
+.navigation-burger {
+  width: 55px;
+  height: 56px;
+  display: none;
+}
+.menu {
+  font-size: $_30px;
+  color: rgb(255, 255, 255);
+}
+.header-title {
         color: #FFF;
         text-align: center;
         font-family: Raleway;
@@ -153,7 +109,7 @@ h1{
 .header-description {
     text-align: center;
     p {
-        color: #FFF;
+        color: rgb(255, 255, 255);
         text-align: center;
         font-family: Raleway;
         font-size: $_24px;
@@ -168,7 +124,14 @@ h1{
   margin: auto;
   text-align: center;
   display: flex;
+  background: rgb(255, 67, 67);
+}
+.button-wrap:hover {
+  background: rgb(231, 20, 20);
+}
+.button-wrap:active {
   background: #FF4343;
+  box-shadow: 4px 4px 30px 0px #FF4343;
 }
 .button_link {
         width: 370px;

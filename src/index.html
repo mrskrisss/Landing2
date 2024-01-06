@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="./scss/index.scss">
     <title>Coursework</title>
 </head>
@@ -18,26 +18,25 @@
                         <div class="navigation-menu">
                         <ul class="navigation-list">
                             <li class="navigation-list_item">
-                                <a href="#">features</a>
+                                <a href="#" class="navigation-list_item-link">features</a>
                             </li>
                             <li class="navigation-list_item">
-                                <a href="#">works</a>
+                                <a href="#" class="navigation-list_item-link">works</a>
                             </li>
                             <li class="navigation-list_item">
-                                <a href="#">our team</a>
+                                <a href="#" class="navigation-list_item-link">our team</a>
                             </li>
                             <li class="navigation-list_item">
-                                <a href="#">testimonials</a>
+                                <a href="#" class="navigation-list_item-link">testimonials</a>
                             </li>
                             <li class="navigation-list_item">
-                                <a href="#">download</a>
+                                <a href="#" class="navigation-list_item-link">download</a>
                             </li>
                         </ul>
-                        <div class="hamburger-menu">
-                            <input id="menu__toggle" type="checkbox" />
-                            <label class="menu__btn" for="menu__toggle">
-                              <span></span>
-                            </label>
+                        <div class="navigation-burger">
+                            <a href="#" class="burger-link">
+                                <i class="fa-solid fa-bars menu"></i>
+                            </a>
                         </div>
                         </div>
                     </nav>
@@ -430,13 +429,19 @@
                     <div class="social-icons">
                         <ul class="social-icons-list">
                             <li class="list-icon">
-                                <a class="list-icon" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a class="list-icon" href="#">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
                             </li>
                             <li class="list-icon">
-                                <a class="list-icon" href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a class="list-icon" href="#">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
                             </li>
                             <li class="list-icon">
-                                <a class="list-icon" href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                <a class="list-icon" href="#">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -461,6 +466,8 @@
             </h5>
         </div>
     </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="module" src="./js/slick.min.js"></script>
     <script  type="module" src="./js/index.js"></script>
 </body>
