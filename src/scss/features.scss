@@ -26,8 +26,8 @@
             }
         }
     }
-        h4 {
-            color: $title;
+.title-features {
+    color: $title;
     font-family: Raleway;
     font-size: $_24px;
     font-weight: 900;
@@ -35,8 +35,8 @@
     text-transform: uppercase;
             margin-bottom: 50px;
             text-transform: uppercase
-        }
-        .description-features {
+}
+.description-features {
         p{
             color: $title;
     font-family: Raleway;

@@ -1,21 +1,5 @@
 @import '../scss/variables';
 @import '../scss/_mixins';
-@import '../scss/variables';
-@import '../scss/_mixins';
-.testimonials {
-}
-.slick-slider{
-	min-width: 0;
-}
-/* Ограничивающая оболочка */
-.slick-list {
-	overflow: hidden;
-}
-/* Лента слайдов */
-.slick-track{
-	display: flex;
-	align-items: flex-start;
-}
 
 .wrapper-image {
     max-width: 741px;
@@ -48,7 +32,7 @@ p{
     margin-bottom: 15px;
 }
 }
-h6 {
+.description-text {
     margin-left: 149px;
     margin-right: 149px;
     color: #FFF;
@@ -58,10 +42,10 @@ h6 {
     line-height: normal;
     text-transform: uppercase;
 }
-.swiper-container .swiper-pagination {
+.swiper .swiper-pagination {
     bottom: 0;
 }
-.swiper-container .swiper-pagination-bullet {
+.swiper .swiper-pagination-bullet {
     border: 1px solid #5C3249;;
     background-color: #5C3249;;
 }

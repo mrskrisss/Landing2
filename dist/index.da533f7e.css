@@ -230,7 +230,7 @@ h1 {
   height: 100%;
 }
 
-h4 {
+.title-features {
   color: #000;
   text-transform: uppercase;
   text-transform: uppercase;
@@ -247,19 +247,6 @@ h4 {
   font-size: 1.125rem;
   font-weight: 400;
   line-height: normal;
-}
-
-.slick-slider {
-  min-width: 0;
-}
-
-.slick-list {
-  overflow: hidden;
-}
-
-.slick-track {
-  align-items: flex-start;
-  display: flex;
 }
 
 .wrapper-image {
@@ -298,7 +285,7 @@ h4 {
   font-weight: 400;
 }
 
-h6 {
+.description-text {
   color: #fff;
   text-transform: uppercase;
   margin-left: 149px;
@@ -309,11 +296,11 @@ h6 {
   line-height: normal;
 }
 
-.swiper-container .swiper-pagination {
+.swiper .swiper-pagination {
   bottom: 0;
 }
 
-.swiper-container .swiper-pagination-bullet {
+.swiper .swiper-pagination-bullet {
   background-color: #5c3249;
   border: 1px solid #5c3249;
 }
@@ -508,31 +495,51 @@ h6 {
   padding: 0;
 }
 
-.work-content {
-  flex-flow: wrap;
+.work-container {
+  flex-direction: column;
   display: flex;
+  position: relative;
+}
+
+.work-container-elements {
+  box-sizing: border-box;
+  flex-direction: row;
+  flex-shrink: 0;
+  align-items: stretch;
+  display: flex;
+  position: relative;
 }
 
 .work-item {
-  object-fit: cover;
-  object-position: center;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   width: 25%;
   max-height: 340px;
+  transition: all .3s;
+  position: relative;
   overflow: hidden;
+}
+
+.work-item a {
+  width: 25%;
+  max-height: 340px;
 }
 
 .wokr-item-img {
   padding: 0 0 100%;
+  display: block;
+  position: relative;
   overflow: hidden;
 }
 
 .wokr-item-img img {
-  width: 25%;
-  max-height: 340px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.wokr-item-filter {
+.work-item-content {
+  opacity: 0;
   background-color: #ff4343cc;
   flex-direction: column;
   justify-content: center;
@@ -540,9 +547,41 @@ h6 {
   height: 100%;
   transition: all .3s;
   display: flex;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.work-item-content-title {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-family: Raleway;
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 60px;
+  display: flex;
+}
+
+.work-item-content-text p {
+  color: #fff;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.work-item:hover .work-item-content {
+  opacity: 1;
+}
+
+.work-item:active .work-item-content {
+  opacity: 1;
+  background: #b90c0ccc;
 }
 
 * {

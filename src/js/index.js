@@ -1,1 +1,0 @@
-const swiper=new swiper ('.slider-container');
