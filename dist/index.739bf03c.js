@@ -575,6 +575,9 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"ebWYT":[function(require,module,exports) {
+$(document).ready(function() {
+    $(".slider").slick();
+});
 
 },{}]},["b3anl","ebWYT"], "ebWYT", "parcelRequiredd31")
 
