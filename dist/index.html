@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="/index.da533f7e.css">
     <title>Coursework</title>
 </head>
@@ -11,12 +11,12 @@
     <header class="header">
         <div class="container">
                 <div class="header-wrap">
-                    <div class="logo">
+                    <div class="logo" id="logo">
                         <span>active</span>box
                     </div>
                     <nav class="navigation">
                         <div class="navigation-menu">
-                        <ul class="navigation-list">
+                        <ul class="navigation-list" id="list">
                             <li class="navigation-list_item">
                                 <a href="#" class="navigation-list_item-link">features</a>
                             </li>
@@ -33,16 +33,17 @@
                                 <a href="#" class="navigation-list_item-link">download</a>
                             </li>
                         </ul>
-                        <div class="navigation-burger">
+                        <div class="navigation-burger" id="burger">
                             <a href="#" class="burger-link">
                                 <i class="fa-solid fa-bars menu"></i>
                             </a>
                         </div>
                         </div>
                     </nav>
+                    <div class="popup" id="popup"></div>
                 </div>
                     <h1 class="header-title">
-                        Your Favorite One PageMulti Purpose Template
+                        Your Favorite One Page Multi Purpose Template
                     </h1>
                         <div class="header-description">
                             <p>
@@ -376,22 +377,85 @@
         </div>
     </section>
     <section class="testimonials">
-        <div class="slider">
-            <div class="slider-item">
-                <div class="wrap-img">
-                    <img src="/1511074193_imagesbase.ru.c45e2f2f.jpg" alt="">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="wrap-img">
+                    <img src="/bg.6c772103.png" class="img-slide">
+                    </div>
+                <div class="testimonials-information">
+                    <div class="description">
+                        <p>
+                            “Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”
+                        </p>
+                    </div>
+                    <h6 class="description-text">
+                        Susan Sims, Interaction Designer at XYZ
+                    </h6>
                 </div>
             </div>
-            <div class="slider-item">
+            <div class="swiper-slide">
                 <div class="wrap-img">
-                    <img src="/1511074193_imagesbase.ru.c45e2f2f.jpg" alt="">
+                <img src="/3f280fe0eefa64edb8d392830cfe8d14.fc5a9531.jpg" class="img-slide">
+                </div>
+                <div class="testimonials-information">
+                    <div class="description">
+                        <p>
+                            “Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”
+                        </p>
+                    </div>
+                    <h6 class="description-text">
+                        Susan Sims, Interaction Designer at XYZ
+                    </h6>
                 </div>
             </div>
-            <div class="slider-item">
+            <div class="swiper-slide">
                 <div class="wrap-img">
-                    <img src="/1511074193_imagesbase.ru.c45e2f2f.jpg" alt="">
+                <img src="/1511074193_imagesbase.ru.c45e2f2f.jpg" class="img-slide">
+                </div>
+                <div class="testimonials-information">
+                    <div class="description">
+                        <p>
+                            “Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”
+                        </p>
+                    </div>
+                    <h6 class="description-text">
+                        Susan Sims, Interaction Designer at XYZ
+                    </h6>
                 </div>
             </div>
+            <div class="swiper-slide">
+                <div class="wrap-img">
+                <img src="/Dollarphotoclub_49188294-2.cc5d2a5c.jpg" class="img-slide">
+                </div>
+                <div class="testimonials-information">
+                    <div class="description">
+                        <p>
+                            “Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”
+                        </p>
+                    </div>
+                    <h6 class="description-text">
+                        Susan Sims, Interaction Designer at XYZ
+                    </h6>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="wrap-img">
+                <img src="/shutterstock_1050539348.86b2f18e.jpg" class="img-slide">
+                </div>
+                <div class="testimonials-information">
+                    <div class="description">
+                        <p>
+                            “Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”
+                        </p>
+                    </div>
+                    <h6 class="description-text">
+                        Susan Sims, Interaction Designer at XYZ
+                    </h6>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
         </div>
     </section>
     <section class="download">
@@ -466,9 +530,7 @@
             </h5>
         </div>
     </footer>
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="/index.9c2ed057.js" defer=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="/index.739bf03c.js" defer=""></script>
 </body>
 </html>

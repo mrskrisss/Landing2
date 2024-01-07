@@ -84,3 +84,27 @@
     opacity: 1;
     background: rgba(185, 12, 12, 0.80);
   }
+  @media (max-width: 1024px) {
+    html {
+      font-size: 12px;
+    }
+    .container {
+      width: 100%;
+    }
+  }
+  @media (max-width: 320px) {
+    html {
+      font-size: 12px;
+    }
+    .container {
+      width: 100%;
+    }
+    .work-container-elements {
+        position: relative;
+    }
+    .work-item {
+        width: 50%;
+        max-height: 144px;
+        position: relative;
+  }
+  }
